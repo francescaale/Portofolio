@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fran Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <a href="#about-section">Portfolio</a>
+            </div>
+
+            <button class="burger" id="burger">☰</button>
+
+            <div class="right" id="nav-links">
+                <a href="#about-section">About</a>
+
+                <!-- Projects Dropdown -->
+                <div class="nav-dropdown">
+                    <a href="#projects-section" id="projects-toggle">Projects ▾</a>
+                    <div class="dropdown-content">
+                        <a href="#software-projects">Software</a>
+                        <a href="#design-projects">Design</a>
+                    </div>
+                </div>
+
+                <a href="#skills-section">Skills</a>
+                <a href="#leave-message-section">Leave a Message!</a>
+            </div>
+        </nav>
+
+
+    </header>
+    <section id="about-section">
+        <h2>Hey World, I'm Fran!</h2>
+        <div class="headshot">
+            <picture>
+                <img src="images/headshot.png" alt="headshot">
+            </picture>
+        </div>
+        <div class="bio">
+            <p style="font-size: 17px;">
+                Hey! I'm Fran, a final-year Computing undergraduate with a passion for
+                software development and UX design. With a strong foundation in information technology,
+                I bring both technical expertise and a curiosity-driven mindset, always eager to experiment,
+                learn, and create impactful digital experiences.
+            </p>
+            <br>
+            <p style="font-size: 17px;">
+                Outside of academics, I enjoy watching netflix, taking pictures and travelling!
+            </p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/fran.d2106/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/francesca-donea-1112a5235/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/francescaale" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </section>
+
+
+    <div class="divider"></div>
+    <section id="projects-section">
+        <h2>Projects</h2>
+
+        <!-- Software Projects Subsection -->
+        <div class="project-subsection">
+            <h3 id="software-projects">Software</h3>
+            <div #swiperRef="" class="swiper card-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://github.com/francescaale/C-Sharp-Cartoon-Game" target="_blank"
+                            class="project-box">
+                            <picture>
+                                <img src="images/cartoon.png" alt="Cartoon Game">
+                            </picture>
+                            <h4>Cartoon Game</h4>
+                            <h5><em>C# + SQL Database VS</em></h5>
+                            <p>Players must register and guess the cartoon character based on clues and images.</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://github.com/francescaale/Javascript-Connect-Four" target="_blank"
+                            class="project-box">
+                            <picture>
+                                <img src="images/connect.png" alt="Connect Four">
+                            </picture>
+                            <h4>Connect Four </h4>
+                            <h5><em>Java Script</em></h5>
+                            <p>This is a web-based version of the classic Connect Four game, built with HTML, CSS, and
+                                JavaScript.</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://github.com/francescaale/Campus-Event-XML" target="_blank" class="project-box">
+                            <picture>
+                                <img src="images/events.png" alt="Campus events">
+                            </picture>
+                            <h4>Campus Events 1</h4>
+                            <h5><em>Bootstrap + XML</em></h5>
+                            <p>This is a web-based platform designed to showcase campus events using XML.</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://github.com/francescaale/Campus-Event-PHP" target="_blank" class="project-box">
+                            <picture>
+                                <img src="images/events2.png" alt="Campus events 2">
+                            </picture>
+                            <h4>Campus Events 2</h4>
+                            <h5><em>Bootstrap + PHP</em></h5>
+                            <p>This is a web-based platform designed to promote campus events using PHP.</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://github.com/francescaale/Python-Recommendation-Movie" target="_blank"
+                            class="project-box">
+                            <picture>
+                                <img src="images/movie.png" alt="Movies Python">
+                            </picture>
+                            <h4>Recommendation Movie</h4>
+                            <h5><em>Python</em></h5>
+                            <p>A system that suggests movies based on genre. New movies data stored in CSV file.</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://github.com/francescaale/Wizard-C-Sharp-Game" target="_blank"
+                            class="project-box">
+                            <picture>
+                                <img src="images/wizard.png" alt="Wizard Game">
+                            </picture>
+                            <h4>Wizard Game</h4>
+                            <h5><em>C#</em></h5>
+                            <p>Wizards fight based on attributes like Health, Wisdom, Dexterity, and Element.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Design Projects Subsection -->
+        <div class="project-subsection">
+            <h3 id="design-projects">Design</h3>
+            <div #swiperRef="" class="swiper card-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://whimsical.com/admc-FE85ZvGpvxJ1dVCFQgzfoa" target="_blank" class="project-box">
+                            <picture>
+                                <img src="images/admc.png" alt="ADMC Wireframes">
+                            </picture>
+                            <h4>ADMC</h4>
+                            <h5><em>Whimsical</em></h5>
+                            <p>Designed prototypes on different screen sizes versions for 16 week project for ADMC.</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://docs.google.com/presentation/d/17A972sSscwibY_MObKjhXZNchttPAikT/edit?usp=sharing&ouid=115844738495169741800&rtpof=true&sd=true"
+                            target="_blank" class="project-box">
+                            <picture>
+                                <img src="images/frappe.png" alt="Frappe App">
+                            </picture>
+                            <h4>Frappe App</h4>
+                            <h5><em>Powerpoint</em></h5>
+                            <p>'Make A Frappe' teaches users how to create frappes step-by-step in a fun and engaging
+                                way. </p>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://whimsical.com/cake-and-candy-Rp8Z6LQYNGtJHxquQ2TWmr" target="_blank"
+                            class="project-box">
+                            <picture>
+                                <img src="images/cake.png" alt="Cake and Candy Website">
+                            </picture>
+                            <h4>Cake and Candy</h4>
+                            <h5><em>Whimsical</em></h5>
+                            <p>I designed this website cake and candy which is easy and enjoyable to use. link</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://whimsical.com/gelato-GZ5rm4vaaLYvtGPCRrRKnm" target="_blank"
+                            class="project-box">
+                            <picture>
+                                <img src="images/gelato.png" alt="Wireframe Prototype">
+                            </picture>
+                            <h4>Gelato</h4>
+                            <h5><em>Whimsical</em></h5>
+                            <p>I designed a simple ice cream website page inspired by<br> Gelato.</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://whimsical.com/guess-the-cartoon-SbMa9zY4g3CtCi1cfJaDRs" target=_blank
+                            class="project-box">
+                            <picture>
+                                <img src="images/cartoon2.png" alt="Cartoon Game">
+                            </picture>
+                            <h4>Cartoon Game</h4>
+                            <h5><em>Whimsical</em></h5>
+                            <p>Created wireframes to show how the game will demonstrate the gameplay flow. </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://whimsical.com/connect-four-game-6eHgYLRyMQF2vHtUEX9dLA" target="_blank"
+                            class="project-box">
+                            <picture>
+                                <img src="images/connect2.png" alt="Connect Four">
+                            </picture>
+                            <h4>Connect Four</h4>
+                            <h5><em>Whimsical</em></h5>
+                            <p>Created a prototype for the connect four game to help user interactions.</p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="divider"></div>
+    <section id="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-wordpress"></i>
+            <i class="fa fa-code"></i>
+            <i class="fab fa-js"></i>
+            <i class="fa-brands fa-bootstrap"></i>
+            <i class="fa-brands fa-github-alt"></i>
+            <i class="fa-solid fa-database"></i>
+        </div>
+    </section>
+    <div class="divider"></div>
+    <section id="leave-message-section">
+        <h2>Leave a Message!</h2>
+        <p> <a href="mailto: francealessandra.donea@gmail.com"> Here:)</a> </p>
+    </section>
+
+    <!-- Swiper JS -->
+    <footer>
+        <p>&copy; <span id="year"></span> Francesca Donea</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Automatically update the copyright year
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Initialize Swiper
+            const swiper = new Swiper(".card-swiper", {
+                centeredSlides: false,
+                spaceBetween: 0,
+                slidesPerView: 'auto'
+            });
+        });
+
+        // Burger menu
+        document.getElementById("burger").addEventListener("click", () => {
+            document.getElementById("nav-links").classList.toggle("show");
+        });
+
+        // Projects dropdown (click to toggle)
+        document.getElementById("projects-toggle").addEventListener("click", (e) => {
+            e.preventDefault(); // stop it from jumping to #projects-section
+            e.target.parentElement.classList.toggle("show");
+        });
+
+
+    </script>
+
+</body>
+
+</html>
