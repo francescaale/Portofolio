@@ -2,287 +2,619 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Fran Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+
+    <!-- DEV ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <!-- SWIPER -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
+
+    <!-- NAVBAR -->
+
     <header>
+
         <nav>
+
             <div class="left">
-                <a href="#about-section">Portfolio</a>
+                <a href="#about-section">Francesca.</a>
             </div>
 
-            <button class="burger" id="burger">☰</button>
+            <button class="burger" id="burger">
+                ☰
+            </button>
 
             <div class="right" id="nav-links">
+
                 <a href="#about-section">About</a>
 
-                <!-- Projects Dropdown -->
                 <div class="nav-dropdown">
-                    <a href="#projects-section" id="projects-toggle">Projects ▾</a>
+
+                    <a href="#projects-section">
+                        Projects ▾
+                    </a>
+
                     <div class="dropdown-content">
-                        <a href="#software-projects">Software</a>
-                        <a href="#design-projects">Design</a>
+
+                        <a href="#software-projects">
+                            Software
+                        </a>
+
+                        <a href="#design-projects">
+                            Design
+                        </a>
+
                     </div>
+
                 </div>
 
                 <a href="#skills-section">Skills</a>
-                <a href="#leave-message-section">Leave a Message!</a>
+
+                <a href="#leave-message-section">Contact</a>
+
             </div>
+
         </nav>
 
-
     </header>
+
+    <!-- HERO -->
+
     <section id="about-section">
-        <h2>Hey World, I'm Fran!</h2>
+
+        <h2>
+            Computing Graduate <br />
+            Exploring Data & Design
+        </h2>
+
         <div class="headshot">
-            <picture>
-                <img src="images/headshot.png" alt="headshot">
-            </picture>
+            <img src="images/headshot.png" alt="headshot" />
         </div>
+
         <div class="bio">
-            <p style="font-size: 17px;">
-Hey! I'm Fran, a final-year Computing undergraduate with a passion for software development, UX design, and data-driven innovation. 
-                Building on my strong foundation in information technology, I’m eager to deepen my understanding of data analytics 
-                and artificial intelligence to create smarter, more user-focused digital experiences.
+
+            <p>
+                Hey! I'm Fran, a Computing graduate
+                who enjoys creating interactive digital
+                projects and visually appealing interfaces.
             </p>
-            <br>
-            <p style="font-size: 17px;">
-                Outside of academics, I enjoy watching netflix, taking pictures and travelling!
+
+            <br />
+
+            <p>
+                I enjoy experimenting with creative ideas,
+                designing engaging layouts, and bringing
+                concepts to life through code and design.
             </p>
+
         </div>
+
         <div class="social-links">
+
             <a href="https://www.instagram.com/fran.d2106/" target="_blank">
                 <i class="fa-brands fa-instagram"></i>
             </a>
+
             <a href="https://www.linkedin.com/in/francesca-donea-1112a5235/" target="_blank">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
+
             <a href="https://github.com/francescaale" target="_blank">
                 <i class="fa-brands fa-github"></i>
             </a>
+
         </div>
+
     </section>
 
+    <!-- PROJECTS -->
 
-    <div class="divider"></div>
     <section id="projects-section">
+
         <h2>Projects</h2>
 
-        <!-- Software Projects Subsection -->
+        <!-- SOFTWARE -->
+
         <div class="project-subsection">
+
             <h3 id="software-projects">Software</h3>
-            <div #swiperRef="" class="swiper card-swiper">
+
+            <div class="swiper card-swiper">
+
                 <div class="swiper-wrapper">
+
+                    <!-- YOUR PROJECTS -->
+
+                    <div class="swiper-slide">
+                        <a href="https://github.com/francescaale/CareerAnalyser-FYP" target="_blank"
+                            class="project-box">
+                            <img src="images/fyp.png" alt="">
+                            <h4>Career Path Analyser</h4>
+                            <h5>PHP + MySQL + AJAX</h5>
+                            <p>Final year project helping users analyse their current skills.</p>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://github.com/francescaale/Headphones" target="_blank" class="project-box">
+                            <img src="images/dvux.png" alt="">
+                            <h4>Headphones</h4>
+                            <h5>PHP + SQL + AJAX</h5>
+                            <p>Headphone comparison website with a dashboard system.</p>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://github.com/francescaale/HealthApp" target="_blank" class="project-box">
+                            <img src="images/mpd.png" alt="">
+                            <h4>Health App</h4>
+                            <h5>Flutter + Firebase</h5>
+                            <p>Healthcare app supporting young adults.</p>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://github.com/francescaale/PCAPAnalyser" target="_blank" class="project-box">
+                            <img src="images/cyber.png" alt="">
+                            <h4>PCAP Tool</h4>
+                            <h5>Python</h5>
+                            <p>Analyses pcap files to detect suspicious activity.</p>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://github.com/francescaale/Campus-Event-XML" target="_blank" class="project-box">
+
+                            <img src="images/events.png" alt="">
+
+                            <h4>Campus Events 1</h4>
+
+                            <h5>Bootstrap + XML</h5>
+
+                            <p>
+                                Platform showcasing campus
+                                events using XML.
+                            </p>
+
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://github.com/francescaale/Campus-Event-PHP" target="_blank" class="project-box">
+
+                            <img src="images/events2.png" alt="">
+
+                            <h4>Campus Events 2</h4>
+
+                            <h5>Bootstrap + PHP</h5>
+
+                            <p>
+                                Event promotion platform
+                                using PHP and Bootstrap.
+                            </p>
+
+                        </a>
+                    </div>
+
                     <div class="swiper-slide">
                         <a href="https://github.com/francescaale/C-Sharp-Cartoon-Game" target="_blank"
                             class="project-box">
-                            <picture>
-                                <img src="images/cartoon.png" alt="Cartoon Game">
-                            </picture>
+
+                            <img src="images/cartoon.png" alt="">
+
                             <h4>Cartoon Game</h4>
-                            <h5><em>C# + SQL Database VS</em></h5>
-                            <p>Players must register and guess the cartoon character based on clues and images.</p>
+
+                            <h5>C# + SQL</h5>
+
+                            <p>
+                                Guess cartoon characters
+                                based on clues and images.
+                            </p>
+
                         </a>
                     </div>
+
                     <div class="swiper-slide">
                         <a href="https://github.com/francescaale/Javascript-Connect-Four" target="_blank"
                             class="project-box">
-                            <picture>
-                                <img src="images/connect.png" alt="Connect Four">
-                            </picture>
-                            <h4>Connect Four </h4>
-                            <h5><em>Java Script</em></h5>
-                            <p>This is a web-based version of the classic Connect Four game, built with HTML, CSS, and
-                                JavaScript.</p>
+
+                            <img src="images/connect.png" alt="">
+
+                            <h4>Connect Four</h4>
+
+                            <h5>JavaScript</h5>
+
+                            <p>
+                                Interactive browser-based
+                                Connect Four game.
+                            </p>
+
                         </a>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="https://github.com/francescaale/Campus-Event-XML" target="_blank" class="project-box">
-                            <picture>
-                                <img src="images/events.png" alt="Campus events">
-                            </picture>
-                            <h4>Campus Events 1</h4>
-                            <h5><em>Bootstrap + XML</em></h5>
-                            <p>This is a web-based platform designed to showcase campus events using XML.</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://github.com/francescaale/Campus-Event-PHP" target="_blank" class="project-box">
-                            <picture>
-                                <img src="images/events2.png" alt="Campus events 2">
-                            </picture>
-                            <h4>Campus Events 2</h4>
-                            <h5><em>Bootstrap + PHP</em></h5>
-                            <p>This is a web-based platform designed to promote campus events using PHP.</p>
-                        </a>
-                    </div>
+
                     <div class="swiper-slide">
                         <a href="https://github.com/francescaale/Python-Recommendation-Movie" target="_blank"
                             class="project-box">
-                            <picture>
-                                <img src="images/movie.png" alt="Movies Python">
-                            </picture>
-                            <h4>Recommendation Movie</h4>
-                            <h5><em>Python</em></h5>
-                            <p>A system that suggests movies based on genre. New movies data stored in CSV file.</p>
+
+                            <img src="images/movie.png" alt="">
+
+                            <h4>Movie System</h4>
+
+                            <h5>Python</h5>
+
+                            <p>
+                                Movie recommendation system
+                                based on genres.
+                            </p>
+
                         </a>
                     </div>
+
                     <div class="swiper-slide">
                         <a href="https://github.com/francescaale/Wizard-C-Sharp-Game" target="_blank"
                             class="project-box">
-                            <picture>
-                                <img src="images/wizard.png" alt="Wizard Game">
-                            </picture>
+
+                            <img src="images/wizard.png" alt="">
+
                             <h4>Wizard Game</h4>
-                            <h5><em>C#</em></h5>
-                            <p>Wizards fight based on attributes like Health, Wisdom, Dexterity, and Element.</p>
+
+                            <h5>C#</h5>
+
+                            <p>
+                                Fantasy wizard battle game
+                                with combat mechanics.
+                            </p>
+
                         </a>
                     </div>
+
                 </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
             </div>
+
         </div>
 
-        <!-- Design Projects Subsection -->
+        <!-- DESIGN -->
+
         <div class="project-subsection">
+
             <h3 id="design-projects">Design</h3>
-            <div #swiperRef="" class="swiper card-swiper">
+
+            <div class="swiper card-swiper">
+
                 <div class="swiper-wrapper">
+
                     <div class="swiper-slide">
-                        <a href="https://whimsical.com/admc-FE85ZvGpvxJ1dVCFQgzfoa" target="_blank" class="project-box">
-                            <picture>
-                                <img src="images/admc.png" alt="ADMC Wireframes">
-                            </picture>
-                            <h4>ADMC</h4>
-                            <h5><em>Whimsical</em></h5>
-                            <p>Designed prototypes on different screen sizes versions for 16 week project for ADMC.</p>
+                        <a href="https://www.figma.com/design/5cDwinG2W78NDNDm4EYaAR/DVUX" target="_blank"
+                            class="project-box">
+                            <img src="images/headphones.png" alt="">
+                            <h4>Headphones UI</h4>
+                            <h5>Figma</h5>
+                            <p>Interactive mockup prototype for tablet and mobile.</p>
                         </a>
                     </div>
+
                     <div class="swiper-slide">
-                        <a href="https://docs.google.com/presentation/d/17A972sSscwibY_MObKjhXZNchttPAikT/edit?usp=sharing&ouid=115844738495169741800&rtpof=true&sd=true"
+                        <a href="https://whimsical.com/francesca-s-workspace193/fyp-career-analyser-FVgVYh9Gs3rariavDhWZdV"
                             target="_blank" class="project-box">
-                            <picture>
-                                <img src="images/frappe.png" alt="Frappe App">
-                            </picture>
+                            <img src="images/career.png" alt="">
+                            <h4>Career Analyser</h4>
+                            <h5>Wireframes</h5>
+                            <p>Career platform prototypes focused on personalised insights.</p>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://whimsical.com/francesca-s-workspace193/mobile-app-prototype-3WYWMhX4rXd3s3YPEmPeQU"
+                            target="_blank" class="project-box">
+                            <img src="images/health.png" alt="">
+                            <h4>Health App</h4>
+                            <h5>UI Prototype</h5>
+                            <p>Health app prototype with a clean modern interface.</p>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://whimsical.com/admc-FE85ZvGpvxJ1dVCFQgzfoa" target="_blank" class="project-box">
+
+                            <img src="images/admc.png" alt="">
+
+                            <h4>ADMC</h4>
+
+                            <h5>UX Mockup</h5>
+
+                            <p>
+                                Responsive interface mockup
+                                for desktop and mobile.
+                            </p>
+
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://drive.google.com/file/d/1f9ctnQ1QdtZ3UyngKlsKLNvyc7_hOEz-/view?usp=sharing"
+                            target="_blank" class="project-box">
+
+                            <img src="images/frappe.png" alt="">
+
                             <h4>Frappe App</h4>
-                            <h5><em>Powerpoint</em></h5>
-                            <p>'Make A Frappe' teaches users how to create frappes step-by-step in a fun and engaging
-                                way. </p>
+
+                            <h5>UI Design</h5>
+
+                            <p>
+                                Interactive frappé-making
+                                app concept and layouts.
+                            </p>
+
                         </a>
                     </div>
 
                     <div class="swiper-slide">
                         <a href="https://whimsical.com/cake-and-candy-Rp8Z6LQYNGtJHxquQ2TWmr" target="_blank"
                             class="project-box">
-                            <picture>
-                                <img src="images/cake.png" alt="Cake and Candy Website">
-                            </picture>
-                            <h4>Cake and Candy</h4>
-                            <h5><em>Whimsical</em></h5>
-                            <p>I designed this website cake and candy which is easy and enjoyable to use. link</p>
+
+                            <img src="images/cake.png" alt="">
+
+                            <h4>Cake & Candy</h4>
+
+                            <h5>Whimsical</h5>
+
+                            <p>
+                                Dessert website focused on
+                                playful user experience.
+                            </p>
+
                         </a>
                     </div>
+
                     <div class="swiper-slide">
                         <a href="https://whimsical.com/gelato-GZ5rm4vaaLYvtGPCRrRKnm" target="_blank"
                             class="project-box">
-                            <picture>
-                                <img src="images/gelato.png" alt="Wireframe Prototype">
-                            </picture>
+
+                            <img src="images/gelato.png" alt="">
+
                             <h4>Gelato</h4>
-                            <h5><em>Whimsical</em></h5>
-                            <p>I designed a simple ice cream website page inspired by<br> Gelato.</p>
+
+                            <h5>Landing Page</h5>
+
+                            <p>
+                                Dessert-inspired landing
+                                page with modern branding.
+                            </p>
+
                         </a>
                     </div>
+
                     <div class="swiper-slide">
-                        <a href="https://whimsical.com/guess-the-cartoon-SbMa9zY4g3CtCi1cfJaDRs" target=_blank
+                        <a href="https://whimsical.com/guess-the-cartoon-SbMa9zY4g3CtCi1cfJaDRs" target="_blank"
                             class="project-box">
-                            <picture>
-                                <img src="images/cartoon2.png" alt="Cartoon Game">
-                            </picture>
-                            <h4>Cartoon Game</h4>
-                            <h5><em>Whimsical</em></h5>
-                            <p>Created wireframes to show how the game will demonstrate the gameplay flow. </p>
+
+                            <img src="images/cartoon2.png" alt="">
+
+                            <h4>Cartoon Prototype</h4>
+
+                            <h5>Game Mockup</h5>
+
+                            <p>
+                                Gameplay mockup showing
+                                user interactions and flow.
+                            </p>
+
                         </a>
                     </div>
+
                     <div class="swiper-slide">
                         <a href="https://whimsical.com/connect-four-game-6eHgYLRyMQF2vHtUEX9dLA" target="_blank"
                             class="project-box">
-                            <picture>
-                                <img src="images/connect2.png" alt="Connect Four">
-                            </picture>
-                            <h4>Connect Four</h4>
-                            <h5><em>Whimsical</em></h5>
-                            <p>Created a prototype for the connect four game to help user interactions.</p>
+
+                            <img src="images/connect2.png" alt="">
+
+                            <h4>Connect Four UI</h4>
+
+                            <h5>Mockup Prototype</h5>
+
+                            <p>
+                                Prototype improving player
+                                usability and experience.
+                            </p>
+
                         </a>
                     </div>
 
                 </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
             </div>
+
         </div>
+
     </section>
-    <div class="divider"></div>
+
+    <!-- SKILLS -->
+
     <section id="skills-section">
+
         <h2>Skills</h2>
+
         <div class="skills-container">
+
             <i class="fa-brands fa-python"></i>
-            <i class="fa-brands fa-wordpress"></i>
-            <i class="fa fa-code"></i>
             <i class="fab fa-js"></i>
             <i class="fa-brands fa-bootstrap"></i>
             <i class="fa-brands fa-github-alt"></i>
             <i class="fa-solid fa-database"></i>
+            <i class="fa-brands fa-wordpress"></i>
+
         </div>
-    </section>
-    <div class="divider"></div>
-    <section id="leave-message-section">
-        <h2>Leave a Message!</h2>
-        <p> <a href="mailto: francealessandra.donea@gmail.com"> Here:)</a> </p>
+
     </section>
 
-    <!-- Swiper JS -->
+    <!-- CONTACT -->
+
+    <section id="leave-message-section">
+
+        <h2>Contact Me</h2>
+
+        <p>
+            Let's connect and build something amazing together.
+        </p>
+
+        <a class="contact-btn" href="mailto:francealessandra.donea@gmail.com">
+            Email Me
+        </a>
+
+    </section>
+
+    <!-- FOOTER -->
+
     <footer>
-        <p>&copy; <span id="year"></span> Francesca Donea</p>
+
+        <p>
+            © <span id="year"></span> Francesca Donea
+        </p>
+
     </footer>
 
+    <!-- SWIPER -->
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Automatically update the copyright year
-            document.getElementById('year').textContent = new Date().getFullYear();
 
-            // Initialize Swiper
-            const swiper = new Swiper(".card-swiper", {
-                centeredSlides: false,
-                spaceBetween: 0,
-                slidesPerView: 'auto'
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+        const swipers = document.querySelectorAll(".card-swiper");
+
+        swipers.forEach((swiperEl) => {
+
+            const swiper = new Swiper(swiperEl, {
+
+                slidesPerView: 1.15,
+
+                spaceBetween: 25,
+
+                loop: true,
+
+                speed: 800,
+
+                grabCursor: true,
+
+                watchSlidesProgress: true,
+
+                preventClicks: true,
+
+                preventClicksPropagation: true,
+
+                threshold: 10,
+
+                mousewheel: {
+                    forceToAxis: true,
+                },
+
+                autoplay: {
+                    delay: 3500,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+
+                navigation: {
+                    nextEl:
+                        swiperEl.querySelector(".swiper-button-next"),
+
+                    prevEl:
+                        swiperEl.querySelector(".swiper-button-prev"),
+                },
+
+                breakpoints: {
+
+                    640: {
+                        slidesPerView: 2,
+                    },
+
+                    1024: {
+                        slidesPerView: 3,
+                    },
+
+                    1400: {
+                        slidesPerView: 4,
+                    }
+
+                }
+
             });
+
+            swiperEl.addEventListener("mousedown", () => {
+                swiper.allowClick = true;
+            });
+
+            swiperEl.addEventListener("mousemove", () => {
+                swiper.allowClick = false;
+            });
+
         });
 
-        // Burger menu
-        document.getElementById("burger").addEventListener("click", () => {
-            document.getElementById("nav-links").classList.toggle("show");
+        // MOBILE MENU
+        const burger =
+            document.getElementById("burger");
+
+        const navLinks =
+            document.getElementById("nav-links");
+
+        burger.addEventListener("click", () => {
+
+            navLinks.classList.toggle("show");
+
         });
 
-        // Projects dropdown (click to toggle)
-        document.getElementById("projects-toggle").addEventListener("click", (e) => {
-            e.preventDefault(); // stop it from jumping to #projects-section
-            e.target.parentElement.classList.toggle("show");
-        });
+        // SECTION ANIMATION
 
+        const sections =
+            document.querySelectorAll("section");
+
+        const observer =
+            new IntersectionObserver((entries) => {
+
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add("show");
+
+                    }
+
+                });
+
+            }, { threshold: 0.15 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
 
     </script>
 
