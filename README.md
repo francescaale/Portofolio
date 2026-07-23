@@ -1,4 +1,4 @@
-# 🌐 Personal Portfolio Website
+# Personal Portfolio Website
 
 Welcome to my personal portfolio! This website showcases my software development, data analytics, and UI/UX design projects, highlighting the skills and technologies I've developed throughout my academic studies, internships, and personal projects.
 
