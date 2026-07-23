@@ -13,21 +13,22 @@ I'm **Francesca Donea**, a Computing graduate with a passion for software develo
 ## 📊 Data Analytics Projects
 
 - Student Performance Dashboard
-- Business Sales Performance Dashboard
+- E-commerce Sales Performance Dashboard
 - Customer Segmentation (RFM Analysis)
 - HR Analytics Dashboard
 - Bank Loan Analysis Dashboard
+- Business Analytics Dashboard
 
 ## 💻 Software Development Projects
 
 - Career Path Analyser
-- Health App
-- PCAP Analysis Tool
-- Campus Events Platform
+- Flutter Health Application
+- Python PCAP Analysis Tool
+- Campus Events Website
 - Connect Four Game
 - Cartoon Quiz Game
 - Wizard Battle Game
-- Movie Recommendation System
+- Python Movie Recommendation System
 - Headphone Comparison Website
 
 ## 🎨 UI/UX Design Projects
@@ -35,9 +36,9 @@ I'm **Francesca Donea**, a Computing graduate with a passion for software develo
 - Career Path Analyser Wireframes
 - Health App Prototype
 - Headphones UI Design
-- ADMC UX Mockup
-- Frappe App UI
-- Cake & Candy Website
+- ADMC Mockup
+- Frappe App Interface
+- Cake & Candy Mockup
 - Gelato Landing Page
 - Cartoon Game Prototype
 - Connect Four Prototype
