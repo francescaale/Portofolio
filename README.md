@@ -54,7 +54,3 @@ https://www.linkedin.com/in/francesca-donea-1112a5235
 
 🐙 **GitHub:**  
 https://github.com/francescaale
-
-## 📄 License
-
-This project is for educational and portfolio purposes.
