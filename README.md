@@ -35,10 +35,10 @@ I'm **Francesca Donea**, a Computing graduate with a passion for software develo
 
 - Career Path Analyser Wireframes
 - Health App Prototype
-- Headphones UI Design
-- ADMC Mockup
+- Headphones Website Mockups
+- ADMC Company Mockups
 - Frappe App Interface
-- Cake & Candy Mockup
+- Cake & Candy Website Mockups
 - Gelato Landing Page
 - Cartoon Game Prototype
 - Connect Four Prototype
